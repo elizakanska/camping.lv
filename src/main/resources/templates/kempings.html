@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="lv" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="../../static/media/camp.css">
+    <meta charset="utf-8">
+    <link rel="icon" href="../../static/media/logo.ico" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:if="${kempingDataList.size() > 0}" th:text="${kempingDataList[0].Nosaukums}">Kempings</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+</head>
+<body style=" background-image: url('../static/media/bkg.jpeg')">
+<header>
+    <div class="header-content">
+        <img src="../../static/media/logo.png" alt="LKA Logo" class="logo">
+        <h1 class="page-name">Latvijas Kempingu asociācija</h1>
+    </div>
+</header>
+<nav>
+    <ul>
+        <li><a href="../static/lv/index.html" class="Nav">SĀKUMS</a></li>
+        <li><a href="../static/lv/katalogs.html" class="Nav">KEMPINGU KATALOGS</a></li>
+        <li><a href="../static/lv/karte.html" class="Nav">KARTE</a></li>
+        <li><a href="../static/lv/aktualitates.html" class="Nav">AKTUALITĀTES</a></li>
+        <li><a href="../static/lv/asociacija.html" class="Nav">ASOCIĀCIJA</a></li>
+        <li><a href="../static/lv/saites.html" class="Nav">SAITES</a></li>
+        <li><a href="../static/lv/kontakti.html" class="Nav">KONTAKTI</a></li>
+    </ul>
+</nav>
+<main>
+    <div class="katalogs">
+        <table style="width: 100%;">
+            <tr style="outline: #B58D3F 3px solid;">
+                <td colspan="3">
+                    <h1><img th:src="${Logo}" style="height:50px; width: 75px;" th:alt="${Nosaukums}">Kempings</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img th:src="${Attels}" style="height: 250px;width: 375px; margin: 5px;">
+                </td>
+                <td>
+                    <p>
+                        <span>
+                            <img src="../../static/media/katalogs/ikonas/address.gif">
+                        </span>
+                        <span th:text="${Adrese}"></span>
+                    </p>
+                    <p>
+                        <span>
+                            <img src="../../static/media/katalogs/ikonas/phone.gif">
+                        </span>
+                        <span th:text="${Telefons}"></span>
+                    </p>
+                    <p>
+                        <span>
+                            <img src="../../static/media/katalogs/ikonas/email.gif">
+                        </span>
+                        <span th:text="${E-pasts}"></span>
+                    </p>
+                    <p>
+                        <span>
+                            <img src="../../static/media/katalogs/ikonas/web.gif">
+                        </span>
+                        <span th:text="${Majaslapa}"></span>
+                    </p>
+                    <p>
+                        <span>
+                            <img src="../../static/media/katalogs/ikonas/gps.gif">
+                        </span>
+                        <span th:text="${GPS}"></span>
+                    </p>
+                    <h3>
+                        <span>
+                            <img src="../../static/media/katalogs/ikonas/2.png" th:alt="${Gultas}">
+                            <img src="../../static/media/katalogs/ikonas/6.png" th:alt="${Teltis}">
+                            <img src="../../static/media/katalogs/ikonas/3.png" th:alt="${Kemperi}">
+                        </span>
+                    </h3>
+                </td>
+                <td>
+                    <img th:src="${Novads}" class="novads">
+                </td>
+            </tr>
+            <tr style="outline: #B58D3F 3px solid;">
+                <td colspan="3">
+                    <h1>Informācija</h1>
+                    <p th:text="${Info}"></p>
+                </td>
+            </tr>
+            <tr style="outline: #B58D3F 3px solid;">
+                <td colspan="3">
+                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Y8HWJVKnIPsi6wCrxcGXxXMexhaDTxg&ehbc=2E312F" width="100%" height="500px"></iframe>
+                </td>
+            </tr>
+            <tr style="outline: #B58D3F 3px solid;">
+                <td colspan="3">
+                    <h1>Gallery</h1>
+                    <div class="gallery">
+                        <div th:each="bilde : ${Bildes}">
+                            <img th:src="${'../static/media/katalogs/kempings/' + ID + '/' + bilde}" alt="Image">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</main>
+<footer>
+    <table>
+        <tr>
+            <th><h3>REKVIZĪTI</h3></th>
+            <th><h3>KONTAKTI</h3></th>
+        </tr>
+        <tr>
+            <td>
+                <p>Biedrība “Latvijas Kempingu asociācija”</br>
+                    Reģ. Nr. 40008090939</br></br>
+                    „Apaļkalns”, Raiskuma pagasts,</br>
+                    Pārgaujas novads, Latvija, LV-4146</br>
+                    Konta Nr. LV61PARX0012969180001</br>
+                    A/S CITADELE BANKA</p></td>
+            <td>
+                <p>
+                    Telefons: +371 29196534</br>
+                    E-pasts: latvijas.kempingi@gmail.com</br>
+                    Mājas lapa: www.camping.lv</p></td>
+            <td><a href="https://www.facebook.com/campingsoflatvia/" target="_blank"><img src="../../static/media/start/fb.png"></a></td>
+        </tr>
+    </table>
+</footer>
+</body>
+</html>

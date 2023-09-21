@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <link rel="stylesheet" href="../media/camp.css">
+	<meta charset="utf-8">
+	<link rel="icon" href="../media/logo.ico" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sākums</title>
+</head>
+<body>
+	<header>
+		<div class="header-content">
+			<img src="../media/logo.png" alt="LKA Logo" class="logo">
+			<h1 class="page-name">Latvijas Kempingu asociācija</h1>
+			<ul class="lang-sel">
+    <li class="lang-active">
+        <a href="/lv/">
+            <img src="../media/lang/lv_lv.gif" alt="Latviešu" title="Latviešu">
+        </a>
+    </li>
+    <li>
+        <a href="/eng/">
+            <img src="../media/lang/en.gif" alt="English (UK)" title="English (UK)">
+        </a>
+    </li>
+</ul>
+		</div>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="/lv/" class="Nav">SĀKUMS</a></li>
+			<li><a href="/lv/katalogs" class="Nav">KEMPINGU KATALOGS</a></li>
+			<li><a href="/lv/karte" class="Nav">KARTE</a></li>
+			<li><a href="/lv/aktualitates" class="Nav">AKTUALITĀTES</a></li>
+			<li><a href="/lv/asociacija" class="Nav">ASOCIĀCIJA</a></li>
+			<li><a href="/lv/saites" class="Nav">SAITES</a></li>
+			<li><a href="/lv/kontakti" class="Nav">KONTAKTI</a></li>
+		</ul>
+	</nav>
+	<main>
+		<div class="content">
+			<div class="r-gallery">
+				<img class="rotate" src="../media/start/rotate/001.jpg">
+				<img class="rotate" src="../media/start/rotate/002.jpg">
+				<img class="rotate" src="../media/start/rotate/003.jpg">
+				<img class="rotate" src="../media/start/rotate/004.jpg">
+				<img class="rotate" src="../media/start/rotate/005.jpg">
+				<img class="rotate" src="../media/start/rotate/006.jpg">
+				<img class="rotate" src="../media/start/rotate/007.jpg">
+				<img class="rotate" src="../media/start/rotate/008.jpg">
+			</div>
+			<script>
+				var slideIndex = 0;
+				carousel();
+
+				function carousel() {
+					var i;
+					var x = document.getElementsByClassName("rotate");
+					for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";
+					}
+					slideIndex++;
+					if (slideIndex > x.length) {slideIndex = 1}
+					x[slideIndex-1].style.display = "block";
+					setTimeout(carousel, 5000);
+				}
+			</script>
+
+			<div class="big-gallery">
+				<div class="gallery">
+					<a href="karte.html">
+						<img src="../media/start/gallery/karte.jpg" width="220" height="120">
+					</a>
+					<div class="desc">
+						<h3>KEMPINGU KARTE</h3>
+						<p>Latvijas kempingu asociācijas kempingu izvietojums kartē. Izvēlies sev piemērotāko!</p>
+					</div>
+					<button class="more"><a href="karte.html">Uzzināt vairāk...</a></button>
+				</div>
+				<div class="gallery">
+					<a href="katalogs.html">
+						<img src="../media/start/gallery/002.jpg" width="220" height="120">
+					</a>
+					<div class="desc">
+						<h3>KEMPINGU KATALOGS</h3>
+						<p>Izpēti Latvijas kuplo kempingu klāstu! Atpūties dabā...</p>
+					</div>
+					<button class="more"><a href="katalogs.html">Uzzināt vairāk...</a></button>
+				</div>
+				<div class="gallery">
+					<a href="aktualitates.html">
+						<img src="../media/start/gallery/akcijas.jpg" width="220" height="120">
+					</a>
+					<div class="desc">
+						<h3>JAUNUMI, AKCIJAS</h3>
+						<p>Jaunumi, notikumi, akcijas, Latvijas kempingu asociācijas aktivitātes</p>
+					</div>
+					<button class="more"><a href="aktualitates.html">Uzzināt vairāk...</a></button>
+				</div>
+				<div class="gallery">
+					<a href="asociacija.html">
+						<img src="../media/start/gallery/info.jpg" width="220" height="120">
+					</a>
+					<div class="desc">
+						<h3>ASOCIĀCIJAS INFORMĀCIJA</h3>
+						<p>Noderīga informācija kempingu īpašniekiem</p>
+					</div>
+					<button class="more"><a href="asociacija.html">Uzzināt vairāk...</a></button>
+				</div>
+				<div class="gallery">
+					<a href="https://www.campingbaltic.com/uploads/homepage/brochure/Baltic_camping_2023_web.pdf" target="_blank">
+						<img src="../media/start/gallery/katalogs.jpg" width="220" height="120">
+					</a>
+					<div class="desc">
+						<h3>BALTIJAS KATALOGS</h3>
+						<p>Baltijas kempingu karte un katalogs pdf formātā.</p>
+					</div>
+					<button class="more"><a href="https://www.campingbaltic.com/uploads/homepage/brochure/Baltic_camping_2023_web.pdf" target="_blank">Uzzināt vairāk...</a></button>
+				</div>
+				<div class="gallery">
+					<a href="https://www.travigo.eu">
+						<img src="../media/start/gallery/TraviGo.jpg" width="220" height="120">
+					</a>
+					<div class="desc">
+						<h3>PLĀNO NĀKAMO CEĻOJUMU</h3>
+						<p>Izmanto moderno aplikāciju TraviGo, lai ērti apceļotu Latviju!</p>
+					</div>
+					<button class="more"><a href="https://www.travigo.eu" target="_blank">Uzzināt vairāk...</a></button>
+				</div>
+			</div>
+
+			<div class="partners">
+				<a href="https://www.latvia.travel/lv" target="_blank"><img src="../media/start/partners/magnetic_latvia.jpg"></a>
+				<a href="https://www.liveriga.com/en/lv" target="_blank"><img src="../media/start/partners/live_riga.jpg"></a>
+				<a href="https://www.celotajs.lv/lv" target="_blank"><img src="../media/start/partners/lauku_celotajs.jpg"></a>
+				<a href="http://www.vidzeme.com/lv/" target="_blank"><img src="../media/start/partners/vidzeme.jpg"></a>
+				<a href="http://visitlatgale.com/en/" target="_blank"><img src="../media/start/partners/latgale.jpg"></a>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<table>
+			<tr>
+				<th><h3>REKVIZĪTI</h3></th>
+				<th><h3>KONTAKTI</h3></th>
+			</tr>
+			<tr>
+				<td>
+					<p>Biedrība “Latvijas Kempingu asociācija”</br>
+					Reģ. Nr. 40008090939</br></br>
+					„Apaļkalns”, Raiskuma pagasts,</br>
+					Pārgaujas novads, Latvija, LV-4146</br>
+					Konta Nr. LV61PARX0012969180001</br>
+					A/S CITADELE BANKA</p></td>
+				<td><p>
+					Telefons: +371 29196534</br>
+					E-pasts: latvijas.kempingi@gmail.com</br>
+					Mājas lapa: www.camping.lv</p></td>
+				<td><a href="https://www.facebook.com/campingsoflatvia/" target="_blank"><img src="../media/start/fb.png"></a></td>
+			</tr>
+		</table>
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,297 @@
+﻿html{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin-left: 15%;
+  color: white;
+}
+
+.header-content{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.page-name{
+  font-size: 24px;
+}
+
+.lang-sel{
+  display: flex;
+  align-items: center;
+}
+
+.lang-sel li{
+  margin-right: 10px;
+  list-style: none;
+}
+
+nav ul{
+	background-color: #982135;
+	padding-inline-start: 0px;
+	display: flex;
+    justify-content: center;
+}
+
+nav li{
+	font-size: 120%;
+	display: inline;
+	list-style: none;
+}
+
+nav a{
+  color: #cea75a;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #982135;
+}
+
+nav a:hover{
+  color: #350e01;
+  background-color: #ed760d;
+}
+
+nav a:active{
+  color: #350e01;
+  background-color: #ed760d;
+}
+
+body{
+ background-image: url('bkg.jpeg');
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+}
+
+main{
+	display: grid;
+	grid-template-columns: 1.5fr 7fr 1.5fr;
+	grid-template-rows: auto auto;
+	grid-gap: 10px;
+	align-items: center;
+	justify-items: center;
+}
+
+div.content{
+	display: grid;
+	grid-template-columns: 7fr 3fr;
+	grid-template-rows: auto auto;
+	gap: 10px;
+	justify-items: center;
+	background-color: white;
+	grid-column: 2;
+}
+
+div.r-gallery{
+	grid-column: 1 / span 2;
+}
+
+div.big-gallery{
+	grid-column: 1;
+	grid-row: 2;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 5px;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+  display: inline-block;
+  width: 90%;
+  background-color: #a1b7ec;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+}
+
+div.desc {
+  padding: 10px;
+  text-align: center;
+}
+
+button.more{
+	position: relative;
+	left: 16px;
+	bottom: 8px;
+	background-color: #982135;
+}
+
+button.more a{
+	color: white;
+	text-decoration: none;
+}
+
+div.partners{
+	grid-column: 2;
+	grid-row: 2;
+	width: 250px;
+}
+
+div.partners img{
+	width: 220px;
+	height: auto;
+}
+
+div.katalogs{
+	grid-column: 2;
+	width: 100%;
+	background-color: white;
+}
+
+div.map{
+	width: 98vw;
+	height: 90vh;
+}
+
+div.pdf{
+	grid-column: 1;
+	grid-row: 2;
+	display: inline-grid;
+    justify-items: center;
+}
+
+div.merki{
+	grid-column: 1;
+	grid-row: 2;
+	padding: 10px;
+}
+
+.content h1, h2{
+	text-align: center;
+	color: #CEA75A;
+}
+
+.merki p{
+	text-align: justify;
+}
+
+.merki a:link, a:active, a:visited{
+	text-align: justify;
+	color: #CEA75A;
+}
+
+.merki a:hover{
+	color: #ccb077;
+}
+
+div.big-saites{
+	grid-column: 1;
+	grid-row: 2;
+	padding: 10px;
+	display: grid;
+	grid-template-columns: 5fr 5fr;
+	gap: 10px;
+	text-align: center;
+}
+
+div.saites a:link, a:active, a:visited{
+	color: #CEA75A;
+}
+
+div.saites a:hover{
+	color: #ccb077;
+}
+
+div.sazina{
+	grid-column: 1;
+	grid-row: 2;
+	display: grid;
+	grid-template-columns: 5fr 5fr;
+	gap: 10px;
+}
+
+  .forma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .forma input[type="text"],
+  .forma input[type="tel"],
+  .forma input[type="email"],
+  .forma input[type="textarea"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .forma input[type="textarea"] {
+    resize: vertical;
+    height: 150px;
+  }
+
+  .forma input[type="submit"] {
+    width: 200px;
+    height: 60px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .forma input[type="submit"]:hover {
+    background-color: darkorange;
+  }
+
+div.kontakti h1{
+	text-align: center;
+}
+
+div.kontakti p{
+	text-align: right;
+}
+
+footer{
+	background-color: #367132;
+	color: white;
+	position: absolute;
+	width: 100%;
+    right: 0px;
+}
+
+footer img{
+	height: 50px;
+	width: auto;
+}
+
+footer table{
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	justify-content: space-evenly;
+}
+footer th, td{
+	width: 0%;
+}

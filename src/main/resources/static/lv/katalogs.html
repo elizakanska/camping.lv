@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="lv">
+<head>
+	<link rel="stylesheet" href="../media/camp.css">
+	<meta charset="utf-8">
+	<link rel="icon" href="../media/logo.ico" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kempingu katalogs</title>
+</head>
+<body>
+	<header>
+		<div class="header-content">
+			<img src="../media/logo.png" alt="LKA Logo" class="logo">
+			<h1 class="page-name">Latvijas Kempingu asociācija</h1>
+			<ul class="lang-sel">
+				<li class="lang-active">
+					<a href="/lv/">
+						<img src="../media/lang/lv_lv.gif" alt="Latviešu" title="Latviešu">
+					</a>
+				</li>
+				<li>
+					<a href="/eng/">
+						<img src="../media/lang/en.gif" alt="English (UK)" title="English (UK)">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<nav>
+		<ul>
+		<li><a href="index.html" class="Nav">SĀKUMS</a></li>
+		<li><a href="katalogs.html" class="Nav">KEMPINGU KATALOGS</a></li>
+		<li><a href="karte.html" class="Nav">KARTE</a></li>
+		<li><a href="aktualitates.html" class="Nav">AKTUALITĀTES</a></li>
+		<li><a href="asociacija.html" class="Nav">ASOCIĀCIJA</a></li>
+		<li><a href="saites.html" class="Nav">SAITES</a></li>
+		<li><a href="kontakti.html" class="Nav">KONTAKTI</a></li>
+		</ul>
+	</nav>
+	<main>
+	<div class="katalogs">
+		<table id="target"></table>
+	</div>
+	</main>
+	<footer>
+		<table>
+			<tr>
+				<th><h3>REKVIZĪTI</h3></th>
+				<th><h3>KONTAKTI</h3></th>
+			</tr>
+			<tr>
+				<td>
+					<p>Biedrība “Latvijas Kempingu asociācija”</br>
+					Reģ. Nr. 40008090939</br></br>
+					„Apaļkalns”, Raiskuma pagasts,</br>
+					Pārgaujas novads, Latvija, LV-4146</br>
+					Konta Nr. LV61PARX0012969180001</br>
+					A/S CITADELE BANKA</p></td>
+				<td><p>
+					Telefons: +371 29196534</br>
+					E-pasts: latvijas.kempingi@gmail.com</br>
+					Mājas lapa: www.camping.lv</p></td>
+				<td><a href="https://www.facebook.com/campingsoflatvia/" target="_blank"><img src="../media/start/fb.png"></a></td>
+			</tr>
+		</table>
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+	<script id="template" type="text/x-handlebars-template">
+		<tr style="outline: #B58D3F 3px solid;">
+			<td colspan="3">
+			<h1><img src="{{Logo}}" style="max-height:50px; max-width: 75px;">{{ID}}{{Nosaukums}}</h1>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img src="{{Attels}}" style="height: 250px;width: 375px; margin: 5px;">
+			</td>
+			<td>
+				<p>
+						<span>
+							<img src="../media/katalogs/ikonas/address.gif">
+						</span>
+					{{Adrese}}
+				</p>
+				<p>
+						<span>
+							<img src="../media/katalogs/ikonas/phone.gif">
+						</span>
+					{{Telefons}}
+				</p>
+				<p>
+						<span>
+							<img src="../media/katalogs/ikonas/email.gif">
+						</span>
+					{{E-pasts}}
+				</p>
+				<p>
+						<span>
+							<img src="../media/katalogs/ikonas/web.gif">
+						</span>
+					{{Majaslapa}}
+				</p>
+				<p>
+						<span>
+							<img src="../media/katalogs/ikonas/gps.gif">
+						</span>
+					{{GPS}}
+				</p>
+				<h3>
+					<span>
+					<img src="../media/katalogs/ikonas/2.png">{{Gultas}}
+					<img src="../media/katalogs/ikonas/6.png">{{Teltis}}
+					<img src="../media/katalogs/ikonas/3.png">{{Kemperi}}
+					</span>
+				</h3>
+				<p>
+					<button class="more"><a th:href="'/kempings/' + {{ID}}">Lasīt tālāk...</a></button>
+				</p>
+			</td>
+			<td>
+				<img src="{{Novads}}" class="novads">
+			</td>
+		</tr>
+	</script>
+	<script src="kempingi.js"></script>
+</body>
+</html>
